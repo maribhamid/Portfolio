@@ -1,5 +1,5 @@
 import {motion} from "framer-motion";
-
+import pfp from "../assets/pfp.jpg"
 
 
 
@@ -26,7 +26,7 @@ const q = () => {
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
             <div className="flex justify-center lg:p-8">
-                <motion.img src="../assets/pfp.jpg" alt="Marib Hamid" className="border border-stone-900 rounded-full lg:rounded-3xl "
+                <motion.img src={pfp} alt="Marib Hamid" className="border border-stone-900 rounded-full lg:rounded-3xl "
                 width={650}
                 height={650} 
                 initial={{x:100, opacity:0}} 
