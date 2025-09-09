@@ -55,7 +55,7 @@ const handleSubmit = async (event) => {
 
 
   return (
-    <div className="flex flex-wrap my-20 text-center gap-10 px-10 lg:flex-nowrap">
+    <div className="flex flex-wrap my-20 text-center gap-10 px-10 lg:flex-nowrap justify-center">
       <div>
         <motion.h1
         whileInView={{opacity:1, y:0}}
@@ -88,7 +88,7 @@ So go ahead—drop a message. Let’s exchange ideas, collaborate, and turn imag
        whileInView={{opacity:1, x:0}}
         initial={{opacity:0, x:100}}
         transition={{duration:1.5, delay:0.5}}
-      onSubmit={handleSubmit} className="flex flex-col w-90 lg:w-180 gap-4 text-center justify-center">
+      onSubmit={handleSubmit} className="flex flex-col w-full lg:w-180 gap-4  justify-center">
 
         
 
