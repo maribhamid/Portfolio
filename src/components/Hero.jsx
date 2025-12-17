@@ -45,11 +45,11 @@ const q = () => {
                 className="pb-2 text-4xl tracking-tighter lg:text-8xl">Marib Hamid</motion.h2>
                 <motion.span
                 variants={childVariants}
-                className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent">Full Stack Developer</motion.span>
+                className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent">FRONT END DEVELOPER</motion.span>
                 <motion.p 
                 variants={childVariants}
                 className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tight text-stone-400">
-                    I am a Full Stack Developer passionate about building clean, functional, and impactful digital experiences. Skilled in JavaScript, React, Node.js, Express, and MongoDB, I enjoy turning concepts into responsive interfaces and efficient back-end systems.
+                    I am a Front End Developer passionate about building clean, functional, and impactful digital experiences. Skilled in JavaScript, React, HTML, CSS, and responsive design, I enjoy turning concepts into responsive interfaces and efficient front-end systems.
                     With a strong focus on performance, usability, and design consistency, I aim to deliver applications that seamlessly connect users with technology. My goal is to create solutions that are both visually engaging and technically sound, combining creativity with problem-solving.
                 </motion.p>
                 <motion.a 
