@@ -1,16 +1,14 @@
 import { RiReactjsLine} from "react-icons/ri"
 import { TbBrandNextjs } from "react-icons/tb"
-import { SiMongodb } from "react-icons/si"
-import { DiRedis } from "react-icons/di"
 import { FaNodeJs } from "react-icons/fa"
 import { BiLogoPostgresql } from "react-icons/bi"
-import { SiTailwindcss } from "react-icons/si"
+import { SiTailwindcss, SiTypescript } from "react-icons/si"
 import { SiJavascript } from "react-icons/si"
-import { RiTailwindCssFill } from "react-icons/ri"
 import { motion } from "framer-motion"
 import { SiHtml5 } from "react-icons/si"
 import { SiCss3 } from "react-icons/si"
-
+import {SiGithub } from "react-icons/si"
+import {SiGit} from "react-icons/si"
 const iconVariants=(duration)=>({
     initial:{y:-10},
     animate:{y:[10, -10], transition:{duration:duration, ease:"linear", repeat:Infinity, repeatType:"reverse"}},
@@ -54,27 +52,6 @@ const Technologies = () => {
                 </span>
         </motion.div>
 
-
-        <motion.div 
-        initial="initial" animate="animate" variants={iconVariants(2)}
-        className="p-4 relative group inline-block">
-            <SiMongodb className="text-7xl text-cyan-600 transition-transform duration-200 hover:scale-120" />
-            <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm rounded-md bg-black text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    MongoDB
-                </span>
-        </motion.div>
-
-
-        <motion.div
-        initial="initial" animate="animate" variants={iconVariants(2)}
-        className="p-4 relative group inline-block">
-            <DiRedis className="text-7xl text-red-700 transition-transform duration-200 hover:scale-120" />
-            <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm rounded-md bg-black text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    RedIS
-                </span>
-        </motion.div>
-
-
         <motion.div
         initial="initial" animate="animate" variants={iconVariants(2)}
         className="p-4 relative group inline-block">
@@ -88,9 +65,9 @@ const Technologies = () => {
         <motion.div
         initial="initial" animate="animate" variants={iconVariants(2)}
         className="p-4 relative group inline-block">
-            <BiLogoPostgresql className="text-7xl text-sky-700 transition-transform duration-200 hover:scale-120" />
+            <SiTypescript className="text-7xl text-sky-700 transition-transform duration-200 hover:scale-120" />
             <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm rounded-md bg-black text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    SQL
+                    TypeScript
                 </span>
         </motion.div>
 
@@ -137,6 +114,25 @@ const Technologies = () => {
         </motion.div>
 
 
+
+<motion.div 
+        initial="initial" animate="animate" variants={iconVariants(2)}
+        className="p-4 relative group inline-block">
+            <SiGithub  className="text-7xl text-orange-400 transition-transform duration-200 hover:scale-120" />
+            <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm rounded-md bg-black text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    GitHub
+                </span>
+        </motion.div>
+
+
+<motion.div 
+        initial="initial" animate="animate" variants={iconVariants(2)}
+        className="p-4 relative group inline-block">
+            <SiGit  className="text-7xl text-orange-400 transition-transform duration-200 hover:scale-120" />
+            <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm rounded-md bg-black text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Git
+                </span>
+        </motion.div>
 
       </motion.div>
     </div>

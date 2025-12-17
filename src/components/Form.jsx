@@ -55,13 +55,16 @@ const handleSubmit = async (event) => {
 
 
   return (
-    <div className="flex flex-wrap my-20 text-center gap-10 px-10 lg:flex-nowrap justify-center">
-      <div>
+    <div className="flex flex-col my-20 text-center gap-10 px-4 
+                lg:flex-row lg:px-10 justify-center items-center">
+
+      <div className="w-full max-w-2xl">
+
         <motion.h1
         whileInView={{opacity:1, y:0}}
       initial={{opacity:0, y:-100}}
       transition={{duration:1.5, delay:0.5}}
-        className="my-10 text-center text-4xl">Let’s Build Something Amazing Together</motion.h1>
+        className="my-6 text-center text-3xl sm:text-4xl  ">Let’s Build Something Amazing Together</motion.h1>
         <motion.p
          whileInView={{opacity:1, x:0}}
         initial={{opacity:0, x:-100}}
@@ -88,7 +91,7 @@ So go ahead—drop a message. Let’s exchange ideas, collaborate, and turn imag
        whileInView={{opacity:1, x:0}}
         initial={{opacity:0, x:100}}
         transition={{duration:1.5, delay:0.5}}
-      onSubmit={handleSubmit} className="flex flex-col w-full lg:w-180 gap-4  justify-center">
+      onSubmit={handleSubmit} className="flex flex-col w-full max-w-md gap-4 justify-center">
 
         
 
@@ -96,7 +99,7 @@ So go ahead—drop a message. Let’s exchange ideas, collaborate, and turn imag
           type="text"
           name="name"
           placeholder="Name"
-          className="rounded-2xl bg-stone-300 text-black px-3 py-2"
+          className="rounded-2xl bg-stone-300 text-black px-4 py-3"
           value={formData.name}
           onChange={handleInputChange}
         />
@@ -106,7 +109,7 @@ So go ahead—drop a message. Let’s exchange ideas, collaborate, and turn imag
           type="email"
           name="email"
           placeholder="Email"
-          className="rounded-2xl bg-stone-300 text-black px-3 py-2"
+          className="rounded-2xl bg-stone-300 text-black px-4 py-3"
           value={formData.email}
           onChange={handleInputChange}
         />
@@ -117,7 +120,7 @@ So go ahead—drop a message. Let’s exchange ideas, collaborate, and turn imag
           name="message"
           rows={6}
           placeholder="Message"
-          className="rounded-2xl bg-stone-300 text-black px-3 py-2"
+          className="rounded-2xl bg-stone-300 text-black px-4 py-3"
           value={formData.message}
           onChange={handleInputChange}
         />

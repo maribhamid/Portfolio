@@ -54,11 +54,12 @@ const q = () => {
                 </motion.p>
                 <motion.a 
                 variants={childVariants}
-                href="/Marib Hamid Resume.pdf" download="Marib Hamid Resume" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-stone-300 px-6 py-3 text-lg font-semibold text-black shadow-md hover:bg-stone-700">Download Resume</motion.a>
+                href="Portfolio/Resume.pdf" target="_blank" download="Marib Hamid Resume" rel="noopener noreferrer" className="inline-block rounded-full bg-stone-300 px-6 py-3 text-lg font-semibold text-black shadow-md hover:bg-stone-700">Download Resume</motion.a>
             </motion.div>
+            
         </div>
       </div>
-    </div>
+    </div>  
   )
 }
 
